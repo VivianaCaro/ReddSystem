@@ -27,12 +27,12 @@ public class MotorBusqueda {
 	    }    
 	}
 	
-	public TreeMap<Integer, String> buscador(String input) {
+	public TreeMap<Integer, String> buscador(String rutaArchivo, String input) {
 		String stringToParse = "";
 		
 		try {
 			//Leo archivo de ejemplo de entrada
-			stringToParse = Reader.readFile("./resources/redd-test-data.json", Charset.defaultCharset()); //StandardCharsets.UTF_8
+			stringToParse = Reader.readFile(rutaArchivo, Charset.defaultCharset()); //StandardCharsets.UTF_8
 		} catch(IOException io) {
 			System.out.println("No se pudo leer archivo de entrada");
 			io.printStackTrace();

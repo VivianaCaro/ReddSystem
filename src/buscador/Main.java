@@ -15,19 +15,23 @@ public class Main {
 		
 		MotorBusqueda motor = new MotorBusqueda();
 		
-		TreeMap<Integer, String> resultado = motor.buscador(elemento.trim());
-		
-		if(resultado != null) {
-			System.out.println("Resultado TOP 10 match de elementos: ");
-			System.out.println("| RANKING\t| ELEMENTO \t\t| PUNTUACION\t|");
+		if(args.length >= 1 ) {
+			TreeMap<Integer, String> resultado = motor.buscador(args[0], elemento.trim());
 			
-			int i = 0;
-			for (Integer key : resultado.keySet()) {
-				if (i++ == 10) {
-					break;
+			if(resultado != null) {
+				System.out.println("Resultado TOP 10 match de elementos: ");
+				System.out.println("| RANKING\t| ELEMENTO \t\t| PUNTUACION\t|");
+				
+				int i = 0;
+				for (Integer key : resultado.keySet()) {
+					if (i++ == 10) {
+						break;
+					}
+					System.out.println("|\t"+i+"\t|\t" + resultado.get(key) + " \t|\t " + key + "\t|");
 				}
-				System.out.println("|\t"+i+"\t|\t" + resultado.get(key) + " \t|\t " + key + "\t|");
 			}
+		} else {
+			System.out.println("No se especifico archivo de entrada");
 		}
 	}
 }
