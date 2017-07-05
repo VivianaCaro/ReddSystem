@@ -5,8 +5,9 @@ Requisitos de ejecución:
 - Descargar archivo redd-test-data.json desde ReddSystem/resources/
 
 Ejecutar comando en consola:
-
+```
 java -jar redd-system-test.jar redd-test-data.json
+```
 
 Ejemplo:
 ```
