@@ -9,7 +9,7 @@ Ejecutar comando en consola:
 java -jar redd-system-test.jar redd-test-data.json
 
 Ejemplo:
-
+```
 C:\Users\Vivi\Documents\ReddSystem>java -jar redd-system-test.jar redd-test-data.json
 Evaluacion ReddSytem
 Ingrese elemento de busqueda (Ejemplo: "sku-12"):
@@ -26,3 +26,4 @@ Resultado TOP 10 match de elementos:
 |       8       |       sku-10657       |        90     |
 |       9       |       sku-9074        |        89     |
 |       10      |       sku-18149       |        88     |
+```
