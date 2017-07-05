@@ -2,7 +2,8 @@
 
 Requisitos de ejecución:
 - Tener JVM Java 8
-- Descargar archivo redd-test-data.json desde ReddSystem/resources/
+- Descargar archivo compilado "redd-system-test.jar"
+- Descargar archivo "redd-test-data.json" desde ReddSystem/resources/
 
 Ejecutar comando en consola:
 ```
