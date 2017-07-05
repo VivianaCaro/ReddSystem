@@ -1,30 +1,30 @@
 # RSApply
 
-Descripción: 
+DescripciÃ³n: 
 
-Construir un pequeño motor de búsquedas de artículos semejantes. Se valorará tanto el
+Construir un pequeÃ±o motor de bÃºsquedas de artÃ­culos semejantes. Se valorarÃ¡ tanto el
 proceso implementado como la salida del proceso (el resultado). La entrada al proceso va
-adjunta a este test (un .json) que contiene la información que queremos sea procesada.
-Es importante también, poner atención a las consideraciones que se darán a continuación,
-dado que la implementación necesitará tener esas condiciones.
+adjunta a este test (un .json) que contiene la informaciÃ³n que queremos sea procesada.
+Es importante tambiÃ©n, poner atenciÃ³n a las consideraciones que se darÃ¡n a continuaciÃ³n,
+dado que la implementaciÃ³n necesitarÃ¡ tener esas condiciones.
 
 Datos de entrada:
 
-? Json que contiene artículos (redd-test-data.json)
+* Json que contiene artÃ­culos (redd-test-data.json)
 
-? Cada artículo tiene un conjunto de atributos
+* Cada artÃ­culo tiene un conjunto de atributos
 
-Recomendaciones motor de búsqueda:
+Recomendaciones motor de bÃºsqueda:
 
-Escriba un programa que calcule las similitudes entre artículos, basado en sus atributos.
-El número de atributos que hagan match es la métrica más importante para definir la
-similitud entre artículos.
-Si se produce un empate entre artículos, el desempate es en base a los nombres de los
-atributos ordenados alfabéticamente( a es el más alto, z es el más bajo)
+Escriba un programa que calcule las similitudes entre artÃ­culos, basado en sus atributos.
+El nÃºmero de atributos que hagan match es la mÃ©trica mÃ¡s importante para definir la
+similitud entre artÃ­culos.
+Si se produce un empate entre artÃ­culos, el desempate es en base a los nombres de los
+atributos ordenados alfabÃ©ticamente( a es el mÃ¡s alto, z es el mÃ¡s bajo)
 
 Ejemplo 1:
 
-{"sku-1": {"att-a": "a1", "att-b": "b1", "att-c": "c1"}} es más parecido a
+{"sku-1": {"att-a": "a1", "att-b": "b1", "att-c": "c1"}} es mÃ¡s parecido a
 
 {"sku-2": {"att-a": "a1", "att-b": "b1", "att-c": "c1"}} que a
 
@@ -32,7 +32,7 @@ Ejemplo 1:
 
 
 Ejemplo 2:
-{"sku-1": {"att-a": "a1", "att-b": "b1"}} es más parecido a
+{"sku-1": {"att-a": "a1", "att-b": "b1"}} es mÃ¡s parecido a
 
 {"sku-2": {"att-a": "a1", "att-b": "b2"}} que a
 
@@ -40,4 +40,4 @@ Ejemplo 2:
 
 Ejemplo de input del programa
 
-Ingreso el valor sku-12 -> calcular los 10 artículos más semejantes basados en los criterios descritos anteriormente -> Resultado en la consola o un archivo
+Ingreso el valor sku-12 -> calcular los 10 artÃ­culos mÃ¡s semejantes basados en los criterios descritos anteriormente -> Resultado en la consola o un archivo
