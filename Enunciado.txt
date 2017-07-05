@@ -1,0 +1,43 @@
+# RSApply
+
+Descripción: 
+
+Construir un pequeño motor de búsquedas de artículos semejantes. Se valorará tanto el
+proceso implementado como la salida del proceso (el resultado). La entrada al proceso va
+adjunta a este test (un .json) que contiene la información que queremos sea procesada.
+Es importante también, poner atención a las consideraciones que se darán a continuación,
+dado que la implementación necesitará tener esas condiciones.
+
+Datos de entrada:
+
+? Json que contiene artículos (redd-test-data.json)
+
+? Cada artículo tiene un conjunto de atributos
+
+Recomendaciones motor de búsqueda:
+
+Escriba un programa que calcule las similitudes entre artículos, basado en sus atributos.
+El número de atributos que hagan match es la métrica más importante para definir la
+similitud entre artículos.
+Si se produce un empate entre artículos, el desempate es en base a los nombres de los
+atributos ordenados alfabéticamente( a es el más alto, z es el más bajo)
+
+Ejemplo 1:
+
+{"sku-1": {"att-a": "a1", "att-b": "b1", "att-c": "c1"}} es más parecido a
+
+{"sku-2": {"att-a": "a1", "att-b": "b1", "att-c": "c1"}} que a
+
+{"sku-3": {"att-a": "a1", "att-b": "b1", "att-d": "d3"}}
+
+
+Ejemplo 2:
+{"sku-1": {"att-a": "a1", "att-b": "b1"}} es más parecido a
+
+{"sku-2": {"att-a": "a1", "att-b": "b2"}} que a
+
+{"sku-3": {"att-a": "a2", "att-b": "b1"}}
+
+Ejemplo de input del programa
+
+Ingreso el valor sku-12 -> calcular los 10 artículos más semejantes basados en los criterios descritos anteriormente -> Resultado en la consola o un archivo
