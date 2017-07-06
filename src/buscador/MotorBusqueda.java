@@ -1,7 +1,6 @@
 package buscador;
 
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.util.Comparator;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -32,7 +31,7 @@ public class MotorBusqueda {
 		
 		try {
 			//Leo archivo de ejemplo de entrada
-			stringToParse = Reader.readFile(rutaArchivo, Charset.defaultCharset()); //StandardCharsets.UTF_8
+			stringToParse = Reader.readFile(rutaArchivo);
 		} catch(IOException io) {
 			System.out.println("No se pudo leer archivo de entrada");
 			io.printStackTrace();
